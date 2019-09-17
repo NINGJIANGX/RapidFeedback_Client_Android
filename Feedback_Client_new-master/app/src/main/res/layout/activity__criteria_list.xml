@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_CriteriaList">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_header_background"
+            android:layout_weight="14"
+            android:elevation="40dp">
+
+            <TextView
+                android:id="@+id/textView_projectName_CriteriaList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="sans-serif-medium"
+                android:text="Projects "
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/textView_projectName_CriteriaList"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+                <TextView
+                    android:id="@+id/textView_helloUser_criteriaList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="100"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="right"
+                    android:text="Hello, Xxxxxx Xxxxxx"
+                    android:textColor="#ffffff"
+                    android:singleLine="true"
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeMinTextSize="12dp"
+                    app:autoSizeMaxTextSize="18dp"
+                    app:autoSizeStepGranularity="2dp" />
+
+                <View
+                    android:id="@+id/divider13"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="right"
+                    android:text="Help"
+                    android:textColor="#ffffff"
+                    android:singleLine="true"
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeMinTextSize="12dp"
+                    app:autoSizeMaxTextSize="18dp"
+                    app:autoSizeStepGranularity="2dp" />
+
+                <View
+                    android:id="@+id/divider14"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView_logout_criteriaList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Log Out"
+                    android:textColor="#ffffff"
+                    android:singleLine="true"
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeMinTextSize="12dp"
+                    app:autoSizeMaxTextSize="18dp"
+                    app:autoSizeStepGranularity="2dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:id="@+id/linearlayout_defaultCriteriaList_criteriaList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="false"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="3"
+                        android:background="@drawable/ic_criteria_background"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView_CriteriaList_inCriteriaList"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="center"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="5dp"
+                            android:text="Criteria List"
+                            android:textColor="#DD000000"
+                            android:textSize="24dp" />
+
+                        <View
+                            android:id="@+id/divider15"
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:background="#DD014085" />
+
+                        <ListView
+                            android:id="@+id/listView_CriteriaList_inCriteriaList"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="5dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearlayout_marketCriteria_criterialist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="false"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="3"
+                        android:background="@drawable/ic_criteria_background"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/textView_marketCriteria_inCriteriaList"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:fontFamily="sans-serif-medium"
+                                android:paddingLeft="20dp"
+                                android:paddingBottom="5dp"
+                                android:paddingTop="10dp"
+                                android:paddingRight="10dp"
+                                android:text="Marking Criteria"
+                                android:textColor="#DD000000"
+                                android:textSize="24dp" />
+
+                            <Button
+                                android:id="@+id/button_addMarkedCriteria_criteriaList"
+                                android:layout_width="28dp"
+                                android:layout_height="28dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="20dp"
+                                android:background="@drawable/ic_add"
+                                android:gravity="right"
+                                android:onClick="addMarkedCriteria"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                        </RelativeLayout>
+
+                        <View
+                            android:id="@+id/divider16"
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:background="#DD014085" />
+
+                        <ListView
+                            android:id="@+id/listView_marketCriteria_inCriteriaList"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="5dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearlayout_commentOnlyList_criteriaList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="3"
+                        android:background="@drawable/ic_criteria_background"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/textView_CommentOnly_inCriteriaList"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:fontFamily="sans-serif-medium"
+                                android:paddingLeft="20dp"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="5dp"
+                                android:paddingRight="10dp"
+                                android:text="Comment Only"
+                                android:textColor="#DD000000"
+                                android:textSize="24dp" />
+
+                            <Button
+                                android:id="@+id/button3"
+                                android:layout_width="28dp"
+                                android:layout_height="28dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="20dp"
+                                android:background="@drawable/ic_add"
+                                android:gravity="right"
+                                android:onClick="addCommentCriteria"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                        </RelativeLayout>
+
+                        <View
+                            android:id="@+id/divider17"
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:background="#DD014085" />
+
+                        <ListView
+                            android:id="@+id/listView_commentOnly_inCriteriaList"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="5dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4">
+
+                    <Button
+                        android:id="@+id/button_back_inCriteriaList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginBottom="50dp"
+                        android:layout_marginTop="10dp"
+                        android:onClick="back_inCriteriaList"
+                        android:text="Back"
+                        android:textSize="14dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:background="@drawable/ic_button_background"
+                        android:textColor="#ffffff" />
+
+                    <Button
+                        android:id="@+id/button_showComments_gridItemCommentOnly"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginBottom="50dp"
+                        android:text="Next"
+                        android:textSize="14dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:layout_marginTop="10dp"
+                        android:onClick="next_inCriteriaList"
+                        android:background="@drawable/ic_button_background"
+                        android:textColor="#ffffff" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="normal">#000000</color>
+    <color name="pressed">#000000</color>
+    <color name="selected">#000000</color>
+
+    <color name="bg_two_normal">#FFFFFFFF</color>
+    <color name="bg_two_pressed">#D7D7D7D7</color>
+    <color name="bg_two_selected">#D7D7D7D7</color>
+
+    <color name="bg_three_normal">#FFFFFFFF</color>
+    <color name="bg_three_pressed">#D7D7D7D7</color>
+    <color name="bg_three_selected">#D7D7D7D7</color>
+</resources>

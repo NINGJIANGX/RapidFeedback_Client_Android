@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.feedback">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity_SendReport_Group"></activity>
+        <activity android:name=".Activity_Editable_group_report" />
+        <activity android:name=".Activity_showComment_markAllocation" />
+        <activity android:name=".Activity_SendReport_Individual" />
+        <activity android:name=".Activity_editable_individual_report"
+            android:launchMode = "singleTask"/>
+        <activity android:name=".Activity_ReviewReport" />
+        <activity android:name=".Activity_Reaper_Mark"
+            android:launchMode="singleTask"/>
+        <activity android:name=".Activity_Realtime_Assessment" />
+        <activity
+            android:name=".Homepage"
+            android:launchMode="singleTask" />
+        <activity android:name=".Activity_MarkAllocation" />
+        <activity android:name=".Activity_CriteriaList" />
+        <activity android:name=".Activity_Timer" />
+        <activity android:name=".Activity_About" />
+        <activity
+            android:name=".Activity_Assessment"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".Assessment_Preparation_Activity"
+            android:launchMode="standard" />
+        <activity android:name=".Activity_signUp" />
+        <activity android:name=".Activity_Student_Group" />
+
+        <activity
+            android:name=".Activity_Login"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity_assessment_comment"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

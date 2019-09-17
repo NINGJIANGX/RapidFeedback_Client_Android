@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_About">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:clipToPadding="false">
+
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="14"
+            android:background="@drawable/ic_header_background"
+            android:elevation="40dp">
+
+            <TextView
+                android:id="@+id/textView_projectName_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="sans-serif-medium"
+                android:text="Projects "
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/textView_projectName_about"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+                <TextView
+                    android:id="@+id/textView_helloUser_about"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="100"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="right|center_vertical"
+                    android:text="Hello, Xxxxxx Xxxxxx"
+                    android:textColor="#ffffff"
+                    android:singleLine="true"
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeMinTextSize="12dp"
+                    app:autoSizeMaxTextSize="18dp"
+                    app:autoSizeStepGranularity="2dp" />
+
+                <View
+                    android:id="@+id/divider13"
+                    android:layout_width="1dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"/>
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="right|center_vertical"
+                    android:text="Help"
+                    android:textColor="#ffffff"
+                    android:singleLine="true"
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeMinTextSize="12dp"
+                    app:autoSizeMaxTextSize="18dp"
+                    app:autoSizeStepGranularity="2dp" />
+
+                <View
+                    android:id="@+id/divider14"
+                    android:layout_width="1dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView_logout_about"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Log Out"
+                    android:textColor="#ffffff"
+                    android:singleLine="true"
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeMinTextSize="12dp"
+                    app:autoSizeMaxTextSize="18dp"
+                    app:autoSizeStepGranularity="2dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="25dp"
+                android:text="About"
+                android:textColor="#dd000000"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            <View
+                android:id="@+id/divider9"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_below="@id/textView2"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="#014085" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/divider9"
+                android:layout_marginLeft="34dp"
+                android:layout_marginTop="20dp"
+                android:text="Project Name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editText_projectname_inabout"
+                android:layout_marginLeft="34dp"
+                android:layout_marginTop="20dp"
+                android:text="Subject Name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editText_projectname_inabout"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/editText_subjectname_inabout"
+                android:text="Subject Code"
+                android:layout_marginLeft="3dp"
+                android:layout_alignLeft="@id/editText_subjectcode_inabout"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editText_subjectname_inabout"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="34dp"
+                android:layout_marginBottom="8dp"
+                android:text="Project Description"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <EditText
+                android:id="@+id/editText_projectname_inabout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView13"
+                android:layout_marginLeft="30dp"
+                android:hint="Project Name"
+                android:inputType="text"
+                android:ems="20"
+                android:layout_marginTop="-8dp"
+                android:textColor="#8A000000"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/editText_subjectname_inabout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView15"
+                android:layout_marginLeft="30dp"
+                android:hint="Subject Name"
+                android:textColor="#8A000000"
+                android:textSize="16dp"
+                android:ems="16"
+                android:layout_marginTop="-8dp"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/editText_subjectcode_inabout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView16"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_toRightOf="@id/editText_subjectname_inabout"
+                android:hint="Subject Code"
+                android:layout_marginTop="-8dp"
+                android:ems="10"
+                android:textColor="#8A000000"
+                android:textSize="16dp"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/editText_projectdescription_inabout"
+                android:layout_width="540dp"
+                android:layout_height="90dp"
+                android:layout_below="@id/textView17"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:gravity="start|top"
+                android:paddingTop="1dp"
+                android:inputType="textMultiLine"
+                android:textSize="16dp"
+                android:background="@drawable/ic_textbox"
+                />
+
+            <Button
+                android:id="@+id/button_next_inabout"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="50dp"
+                android:onClick="next_About"
+                android:text="Next"
+                android:textSize="14dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:background="@drawable/ic_button_background"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/button_back_inabout"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginBottom="50dp"
+                android:onClick="back_About"
+                android:text="Back"
+                android:textSize="14dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:background="@drawable/ic_button_background"
+                android:textColor="#ffffff"/>
+
+            <Button
+                android:id="@+id/button_save_inabout"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="50dp"
+                android:layout_toLeftOf="@id/button_next_inabout"
+                android:onClick="save_About"
+                android:text="Save"
+                android:textSize="14dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:background="@drawable/ic_save_button"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

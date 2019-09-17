@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Assessment_Preparation_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="14"
+            android:background="@drawable/ic_header_background"
+            android:elevation="40dp">
+
+            <Button
+                android:id="@+id/button_back_title"
+                android:layout_width="34dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/ic_back" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="34dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="70dp"
+                android:background="@drawable/ic_refresh" />
+
+            <TextView
+                android:id="@+id/textView_projectName_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Projects "
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/textView_projectName_about"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+                <TextView
+                    android:id="@+id/textView_helloUser_assessmentPreparation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="100"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Hello, Xxxxxx Xxxxxx"
+                    android:textColor="#ffffff"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeMinTextSize="10dp"
+                    app:autoSizeMaxTextSize="14dp"
+                    app:autoSizeStepGranularity="2dp" />
+
+                <View
+                    android:id="@+id/divider13"
+                    android:layout_width="1dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"/>
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Help"
+                    android:textColor="#ffffff"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeMinTextSize="10dp"
+                    app:autoSizeMaxTextSize="14dp"
+                    app:autoSizeStepGranularity="2dp"/>
+
+                <View
+                    android:id="@+id/divider14"
+                    android:layout_width="1dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView_logout_assessmentPreparation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Log Out"
+                    android:textColor="#ffffff"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeMinTextSize="10dp"
+                    app:autoSizeMaxTextSize="14dp"
+                    app:autoSizeStepGranularity="2dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp">
+
+                    <Button
+                        android:id="@+id/button_edit_inpreparation"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:onClick="edit_AssessmentPreparation"
+                        android:text="Edit"
+                        android:textAllCaps="true"
+                        android:textSize="14dp"
+                        android:textColor="#dd000000" />
+
+                    <Button
+                        android:id="@+id/button_plus_inpreparation"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/ic_button_background"
+                        android:gravity="center_vertical"
+                        android:onClick="plus_AssessmentPreparation"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:text="New Project "
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="#ffffff"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/divider7"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#999999" />
+
+                <ListView
+                    android:id="@+id/listView_inpreparation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:choiceMode="singleChoice"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="5dp"
+                    android:scrollbars="none" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider18"
+                android:layout_width="1dp"
+                android:background="#999999"
+                android:layout_height="match_parent" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/project_name_inpreparation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center"
+                        android:text="Please select or add a project"
+                        android:textSize="24dp"
+                        android:textColor="#000000"
+                        android:maxLines="2"/>
+
+                    <Button
+                        android:id="@+id/button_about_inpreparation"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@android:color/transparent"
+                        android:drawableRight="@drawable/ic_pencil"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingRight="26dp"
+                        android:gravity="left|center_vertical"
+                        android:onClick="about_AssessmentPreparation"
+                        android:text="About"
+                        android:textAllCaps="false"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:id="@+id/divider2"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@id/textView2"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="#dd014085" />
+
+                    <TextView
+                        android:id="@+id/about_detail__inpreparation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:paddingTop="8dp"
+                        android:text="About details"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/button_time_inpreparation"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:paddingRight="30dp"
+                        android:background="@android:color/transparent"
+                        android:drawableRight="@drawable/ic_pencil"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="left|center_vertical"
+                        android:onClick="timer_AssessmentPreparation"
+                        android:text="Time"
+                        android:textAllCaps="false"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:id="@+id/divider3"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@id/textView2"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="#dd014085" />
+
+                    <TextView
+                        android:id="@+id/time_detail__inpreparation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Time details"
+                        android:layout_marginLeft="16dp"
+                        android:textColor="#000000"
+                        android:paddingTop="8dp" />
+
+                    <Button
+                        android:id="@+id/button_criteria_inpreparation"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:paddingRight="18dp"
+                        android:background="@android:color/transparent"
+                        android:drawableRight="@drawable/ic_pencil"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="left|center_vertical"
+                        android:onClick="criteriaManagement_AssessmentPreparation"
+                        android:text="Criteria"
+                        android:textAllCaps="false"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:id="@+id/divider4"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@id/textView2"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="#dd014085" />
+
+                    <TextView
+                        android:id="@+id/criteria_detail__inpreparation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Criteria details"
+                        android:layout_marginLeft="16dp"
+                        android:textColor="#000000"
+                        android:paddingTop="8dp"/>
+
+                    <Button
+                        android:id="@+id/button_studentmanagement__inpreparation"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:paddingRight="26dp"
+                        android:background="@android:color/transparent"
+                        android:drawableRight="@drawable/ic_pencil"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="left|center_vertical"
+                        android:onClick="studentManagement_AssessmentPreparation"
+                        android:text="Student Management  "
+                        android:textAllCaps="false"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:id="@+id/divider5"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@id/textView2"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="#dd014085" />
+
+                    <TextView
+                        android:id="@+id/student_detail__inpreparation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Click Subtitle to Manage Students"
+                        android:layout_marginLeft="16dp"
+                        android:textColor="#000000"
+                        android:paddingTop="8dp"/>
+
+                    <Button
+                        android:id="@+id/button_asseccor__inpreparation"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:paddingRight="10dp"
+                        android:background="@android:color/transparent"
+                        android:drawableRight="@drawable/ic_pencil"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="left|center_vertical"
+                        android:onClick="assessors_AssessmentPreparation"
+                        android:text="Asseccors  "
+                        android:textAllCaps="false"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:id="@+id/divider6"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@id/textView2"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="#dd014085"/>
+
+                    <TextView
+                        android:id="@+id/asseccor_detail__inpreparation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="asseccor details"
+                        android:layout_marginLeft="16dp"
+                        android:textColor="#000000"
+                        android:paddingTop="8dp"
+                        android:layout_marginBottom="30dp"/>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
